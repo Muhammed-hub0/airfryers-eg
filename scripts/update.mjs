@@ -230,7 +230,7 @@ async function main() {
     console.log(`رد الـ API: ${items.size} منتج${errors.length ? ` · ${errors.length} تحذير` : ''}`);
 
     if (errors.length) {
-      const unique = [...new Set(errors.map((e) => e.code || e.message))].slice(0, 8);
+      const unique = [...new Set(errors.map((e) => (e.message || e.code || 'error').slice(0, 240)))].slice(0, 4);
       console.log(`  تحذيرات: ${unique.join(' · ')}`);
     }
 
