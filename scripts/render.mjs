@@ -187,7 +187,7 @@ a:hover{text-decoration:underline}
 ${body}
 </tbody></table>
 <div class="ft">
-  <div>آخر تحديث تلقائي: ${esc(formatDate(updatedAt))} · ${rows.length} منتج</div>
+  <div>آخر فحص تلقائي: ${esc(formatDate(updatedAt))} · ${rows.length} منتج</div>
   <div>كأفلييت أمازون: قد نحصل على عمولة من عمليات الشراء اللي بتحصل عن طريق روابط الصفحة، من غير أي تكلفة إضافية عليك. الأسعار والمقاسات بتتحدث تلقائيًا وقد تختلف لحظة الشراء.</div>
 </div>
 <script>
